@@ -1,0 +1,51 @@
+touch - create a file
+(spectre㉿MSI)-[~]$ touch ABC.txt 
+
+vi - open the file
+(spectre㉿MSI)-[~]$ vi ABC.txt
+
+more - Displays the content of the file
+(spectre㉿MSI)-[~]$ more ABC.txt
+ arun
+ nimesh
+ isuru
+ hiran
+ 
+dir *.txt - lists all files with the .txt extension
+(spectre㉿MSI)-[~]$ dir *.txt
+ABC.txt  abc.txt  xyz.txt
+
+find *B* - search for all file and directories with the letter "B"
+(spectre㉿MSI)-[~]$ find *B*
+ABC.txt
+
+chmod 444 ABC.txt - set  permissions to read-only for everyone(user,server and admin) on the file ABC.txt
+(spectre㉿MSI)-[~]$ chmod 444 ABC.txt
+
+ls -l   - List files and directories in long format
+(spectre㉿MSI)-[~]$ ls -l
+total 4
+-r--r--r-- 1 sasha sasha 82 Mar 23 16:23 ABC.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:06 abc.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:10 xyz.txt
+
+
+chmod 777 ABC.txt - set full permissions to read,write and execute for everyone on the file ABC.txt
+(spectre㉿MSI)-[~]$ chmod 777 ABC.txt
+(spectre㉿MSI)-[~]$ ls -l
+total 4
+-rwxrwxrwx 1 sasha sasha 82 Mar 23 16:23 ABC.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:06 abc.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:10 xyz.txt
+
+
+chmod 547 ABC.txt 
+(spectre㉿MSI)-[~]$ chmod 547 ABC.txt
+(spectre㉿MSI)-[~]$ ls -l
+total 4
+-r-xr--rwx 1 sasha sasha 82 Mar 23 16:23 ABC.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:06 abc.txt
+-rw-r--r-- 1 sasha sasha  0 Mar 23 16:10 xyz.txt
+
+
+

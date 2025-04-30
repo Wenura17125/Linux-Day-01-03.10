@@ -1,0 +1,14 @@
+::Hides the commands from being shown
+@echo off      
+
+::Shows the current user's name
+echo Username = %USERNAME% 
+
+::Displays "windows version:"
+echo windows version:       
+
+::Shows your Windows version
+ver     
+
+::Keeps the window open until you press a key
+pause      
